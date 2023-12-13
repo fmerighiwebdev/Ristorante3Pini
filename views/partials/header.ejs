@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Ristorante Pizzeria 3 Pini</title>
+</head>
+<body>
+    
+    <header class="header shadow">
+        <div class="nav" id="container">
+            <div class="logo">
+                <a href="/"><img src="images/logo.svg" alt="Logo"></a>
+            </div>
+            <div class="nav-links">
+                <a href="/#restaurant">Il Ristorante</a>
+                <a href="/#menu">Menù</a>
+                <a href="/#where">Dove trovarci</a>
+                <a href="/#history">Storia</a>
+                <a href="/#contacts">Contatti</a>
+                <a href="/conventions">Convenzioni</a>
+            </div>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="nav-links-mobile animate__animated">
+        <a href="/#restaurant">Il Ristorante</a>
+        <a href="/#menu">Menù</a>
+        <a href="/#where">Dove trovarci</a>
+        <a href="/#history">Storia</a>
+        <a href="/#contacts">Contatti</a>
+        <a href="/conventions">Convenzioni</a>
+    </div>
+
+    <script>
+        var hamburger = document.querySelector(".hamburger");
+        var bars = document.querySelectorAll(".bar");
+        var navLinksMobile = document.querySelector(".nav-links-mobile");
+
+        hamburger.addEventListener("click", function() {
+            bars.forEach(function(bar) {
+                bar.classList.toggle("active");
+            });
+        
+            if (navLinksMobile.classList.contains("animate__fadeInDown")) {
+                navLinksMobile.classList.remove("animate__fadeInDown");
+                navLinksMobile.classList.add("animate__fadeOutUp");
+                setTimeout(() => {
+                    navLinksMobile.style.display = "none";
+                }, 600); // Assicurati che il timeout corrisponda alla durata dell'animazione
+            } else {
+                navLinksMobile.classList.remove("animate__fadeOutUp");
+                navLinksMobile.classList.add("animate__fadeInDown");
+                navLinksMobile.style.display = "flex";
+            }
+        });
+        
+        navLinksMobile.addEventListener("click", function (event) {
+            if (event.target.tagName === "A") {
+                navLinksMobile.classList.remove("animate__fadeInDown");
+                navLinksMobile.classList.add("animate__fadeOutUp");
+                setTimeout(() => {
+                    navLinksMobile.style.display = "none";
+                }, 600);
+                bars.forEach(function(bar) {
+                    bar.classList.remove("active");
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>

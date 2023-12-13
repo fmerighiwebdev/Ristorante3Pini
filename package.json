@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  },
+  "name": "ristorante-3-pini",
+  "version": "1.0.0",
+  "description": "Ristorante 3 Pini",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Francesco Merighi",
+  "license": "ISC"
+}

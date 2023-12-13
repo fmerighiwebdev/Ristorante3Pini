@@ -1,0 +1,401 @@
+<%- include("partials/header.ejs") %>
+
+<section class="hero-carousel">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/carousel-1.jpg" class="d-block w-100" alt="Restaurant Carousel">
+          </div>
+          <div class="carousel-item">
+            <img src="images/carousel-2.jpg" class="d-block w-100" alt="Restaurant Carousel">
+          </div>
+          <div class="carousel-item">
+            <img src="images/carousel-4.jpg" class="d-block w-100" alt="Restaurant Carousel">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</section>
+
+<section class="restaurant" id="restaurant">
+    <div class="container sec-container">
+        <h1>Il Ristorante Pizzeria Tre Pini</h1>
+        <div class="arrow-divider">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M649.97 0L599.91 54.12 550.03 0 0 0 0 120 1200 120 1200 0 649.97 0z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <p style="text-align: justify;">Il <strong>Ristorante Pizzeria Tre Pini</strong> è il posto ideale per consumare un semplice pasto, per
+            pranzi di lavoro e meeting aziendali o per festeggiare assieme a parenti ed amici,
+            importanti occasioni come Battesimi, Comunioni, Cresime, Matrimoni, Anniversari,
+            Lauree, e tante altre importanti cerimonie e ricorrenze. <br><br>
+            Il locale è molto ampio, lo stile è rustico ma elegante. L’ambiente è luminoso e
+            profuma di cortesia, cordialità, semplicità e simpatia. I titolari e lo staff sono pronti
+            ad accogliervi con maestosa professionalità per cercare di soddisfare ogni vostro
+            desiderio. <br><br>
+            Il ristorante pizzeria è composto da ampie sale capaci di 210 coperti divise in modo
+            da poter dare la possibilità al cliente di disporre, su richiesta, di zone riservate. <br>
+            Nelle immediate vicinanze del Ristorante è presente un ampio parcheggio con un
+            numero significativo di posti.<br><br>
+            Per i mesi estivi, oltre agli ambienti interni dotati di aria condizionata, vi è anche uno
+            spazio esterno che può contare fino a 100 e più coperti.</p>
+        <div class="restaurant-images">
+            <img src="images/restaurant-1.jpg" data-aos="fade-up" alt="Restaurant Image">
+            <img src="images/restaurant-2.jpg" data-aos="fade-up" data-aos-delay="200" alt="Restaurant Image">
+            <img src="images/restaurant-3.jpg" data-aos="fade-up" data-aos-delay="400" alt="Restaurant Image">
+            <img src="images/restaurant-4.jpg" data-aos="fade-up" data-aos-delay="500" alt="Restaurant Image">
+            <img src="images/restaurant-5.jpeg" data-aos="fade-up" data-aos-delay="700" alt="Restaurant Image">
+            <img src="images/restaurant-6.jpg" data-aos="fade-up" data-aos-delay="900" alt="Restaurant Image">
+        </div>
+        <div class="overlay"></div>
+        <table class="table table-desk">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Lunedì</th>
+                <th scope="col">Martedì</th>
+                <th scope="col">Mercoledì</th>
+                <th scope="col">Giovedì</th>
+                <th scope="col">Venerdì</th>
+                <th scope="col">Sabato</th>
+                <th scope="col">Domenica</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Pranzo</th>
+                <td>12.00-14.30</td>
+                <td>Chiuso</td>
+                <td>12.00-14.30</td>
+                <td>12.00-14.30</td>
+                <td>12.00-14.30</td>
+                <td>12.00-14.30</td>
+                <td>12.00-14.30</td>
+              </tr>
+              <tr>
+                <th scope="row">Cena</th>
+                <td>19.00-22.30</td>
+                <td>Chiuso</td>
+                <td>19.00-22.30</td>
+                <td>19.00-22.30</td>
+                <td>19.00-22.30</td>
+                <td>19.00-22.30</td>
+                <td>19.00-22.30</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table class="table table-mobile">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Pranzo</th>
+                <th scope="col">Cena</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Lunedì</th>
+                <td>12.00-14.30</td>
+                <td>19.00-22.30</td>
+              </tr>
+              <tr>
+                <th scope="row">Martedì</th>
+                <td>Chiuso</td>
+                <td>Chiuso</td>
+              </tr>
+              <tr>
+                <th scope="row">Mercoledì</th>
+                <td>12.00-14.30</td>
+                <td>19.00-22.30</td>
+              </tr>
+              <tr>
+                <th scope="row">Giovedì</th>
+                <td>12.00-14.30</td>
+                <td>19.00-22.30</td>
+              </tr>
+              <tr>
+                <th scope="row">Venerdì</th>
+                <td>12.00-14.30</td>
+                <td>19.00-22.30</td>
+              </tr>
+              <tr>
+                <th scope="row">Sabato</th>
+                <td>12.00-14.30</td>
+                <td>19.00-22.30</td>
+              </tr>
+              <tr>
+                <th scope="row">Domenica</th>
+                <td>12.00-14.30</td>
+                <td>19.00-22.30</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</section>
+
+<section class="menu" id="menu">
+    <div class="container sec-container sec-flex">
+        <h1>Il nostro menù</h1>
+        <p style="text-align: justify;">Il nostro <strong>menù</strong> è ben assortito per poter coprire tutte le esigenze di gusto e di prezzo. <br><br>
+            Per ogni tipologia di pranzo o cena il Ristorante Pizzeria Tre Pini si presenta con delle
+            proposte personalizzate che vi portano a gustare piatti della tradizione italiana
+            mediterranea, piatti tipici del Trentino, di pesce e un’ampia scelta di gustose pizze.
+            Il tutto accompagnata da ottimi vini, spumanti e distillati e birre. <br><br>
+            Gli ingredienti utilizzati sono genuini e di alta qualità, scelti con cura e attenzione. Molti
+            provengono direttamente dal nostro territorio, cercando anche di sostenere le piccole
+            ma ricercate aziende. <br><br>
+            La cucina e la pizzeria offrono anche servizio da <strong>asporto</strong>.</p>
+        <a href="/menu" class="menu-link">Vedi il nostro menù <i class="fa-solid fa-arrow-right"></i></a>
+        <div class="restaurant-images">
+            <img src="images/plate-1.jpeg" data-aos="fade-up" alt="Restaurant Image">
+            <img src="images/plate-2.jpg" data-aos="fade-up" data-aos-delay="200" alt="Restaurant Image">
+            <img src="images/plate-3.jpeg" data-aos="fade-up" data-aos-delay="400" alt="Restaurant Image">
+            <img src="images/plate-4.jpeg" data-aos="fade-up" data-aos-delay="500" alt="Restaurant Image">
+            <img src="images/plate-5.jpeg" data-aos="fade-up" data-aos-delay="700" alt="Restaurant Image">
+            <img src="images/plate-6.jpeg" data-aos="fade-up" data-aos-delay="900" alt="Restaurant Image">
+        </div>
+    </div>
+</section>
+
+<section class="where" id="where">
+    <div class="container sec-container">
+        <h1>Dove trovarci</h1>
+        <p style="text-align: justify;">Arrivando dall’Autostrada A22: uscita Lago di Garda Nord – Rovereto Sud, girata
+            la rotonda, si va in direzione Rovereto per circa 300 metri, poi alla rotonda
+            successiva, si procede in direzione Mori e dopo circa 100 metri siete arrivati. <br><br>
+            Se venite da Rovereto, prendete direttamente direzione Mori e troverete le
+            indicazioni per arrivare al locale. <br><br>
+            Un <strong>ampio parcheggio</strong> per automobile e autobus vi aspetta con un numero
+            significativo di posti.</p>
+        <% if (cookiePref === 'accepted') { %>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1652.0756531702064!2d11.000032892132017!3d45.862326036944545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47820f68c1f09c9f%3A0xf4c056a03aa5029d!2sRistorante%20Pizzeria%20Bar%20Tre%20Pini!5e0!3m2!1sit!2sit!4v1700477500871!5m2!1sit!2sit" 
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <% } else if (cookiePref === 'denied' || cookiePref === null) { %>
+            <div class="nocookie-text text-center">
+                <p style="color: #cd4848; font-weight: bold; font-size: inherit;">Errore nel caricamento del widget Google Maps</p>
+            </div>
+        <% } %>
+    </div>
+</section>
+
+<section class="history" id="history">
+    <div class="container sec-container">
+        <h1 class="text-brown" style="color: hsl(31, 19%, 24%);">La nostra storia</h1>
+        <div class="history-content">
+            <div class="history-text">
+                <p style="text-align: justify; color: hsl(31, 19%, 24%);">Il <strong>Ristorante Pizzeria Tre Pini</strong> nasce prima del 1970 grazie all’impegno, sacrificio e
+                    duro lavoro di Stedile Angelo e Sannicolò Daniela e fu uno delle prime pizzerie-ristorante di Rovereto. <br>
+                    Dopo la gestione dei proprietari si sono susseguite varie gestioni negli anni: nel 2019 viene preso in conduzione dalla <strong>famiglia Singh</strong> e in modo particolare da
+                    Kaur Kamaljit e Turna Paramjeet Singh. <br>
+                    E’ il penultimo di sei locali che la famiglia Singh ha aperto in Trentino. <br>
+                    La <strong>storia</strong> dei ristoranti Singh è un punto di assoluta rilevanza nel corso della vita
+                    della nostra famiglia. <br> Nostro padre, Singh Satwant, lasciò la nostra terra d’origine, il Punjab, nel
+                    nord dell’India, per inseguire il suo sogno di trovare lavoro come cuoco in Germania.
+                    I primi tempi non furono semplici, lavorò come lavapiatti per alcuni anni per poi
+                    riuscire a concretizzare l’obiettivo di aprire un ristorante di sua proprietà. <br>
+                    Negli anni ’90 arrivò in <strong>Trentino</strong> e innamoratosi del territorio e della sua tradizione
+                    culinaria, coinvolse con contagioso entusiasmo tutta la Famiglia nel progetto di
+                    aprire i ristoranti Singh. <br> 
+                    Il primo ad essere inaugurato fu “All’Amicizia” a Villa
+                    Lagarina nel 2001, a quel tempo unico ristorante indiano del Trentino al quale
+                    seguirono “Lungo Leno” a Rovereto, nel 2004, “Villa Cristina” a Rovereto nel 2009,
+                    “Torre Franca” a Mattarello nel 2014, <strong>“Tre Pini” a Rovereto nel 2019</strong> e “Rudy” a
+                    Riva del Garda nel 2022.</p>
+            </div>
+            <div class="history-grid">
+                <img src="images/famiglia-singh.jpg" class="shadow" data-aos="fade-up" alt="Famiglia Singh">
+                <div class="history-images flex-column flex-md-row flex-lg-column flex-xxl-row">
+                    <img src="images/history-1.jpg" class="shadow" data-aos="fade-up" alt="History Image">
+                    <img src="images/history-2.jpg" class="shadow align-self-end" data-aos="fade-up" alt="History Image">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contacts" id="contacts">
+    <div class="container sec-container">
+        <h1>Contatti</h1>
+        <div class="row row-gap-5">
+            <div class="col-lg-6 col-12 d-flex justify-content-lg-center justify-content-start">
+              <div class="contact-item" data-aos="zoom-out-left">
+                <div class="icon">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="text">
+                    <h3 class="contact-title">Telefono</h3>
+                    <a href="tel:+390464435122" class="contact-link">+39 0464 435122</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-12 d-flex justify-content-lg-center justify-content-start">
+                <div class="contact-item" data-aos="zoom-out-right" data-aos-delay="400">
+                    <div class="icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="text">
+                        <h3 class="contact-title">E-mail</h3>
+                        <a href="mailto:amministrazione@singhrestaurant.it" class="contact-link">3pini@singhrestaurant.it</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 d-flex justify-content-lg-center justify-content-start">
+                <div class="contact-item" data-aos="zoom-out-down" data-aos-delay="200">
+                    <div class="icon">
+                        <i class="fa-solid fa-share-nodes"></i>
+                    </div>
+                    <div class="text">
+                        <h3 class="contact-title">Seguici sui social</h3>
+                        <a class="social-link" href="#" target="_blank"><i class="fa-brands fa-facebook facebook" style="color: #4268a9;"></i></a>
+                        <a class="social-link" href="#" target="_blank"><i class="fa-brands fa-instagram instagram" style="color: #C13584;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contacts-mobile">
+    <div class="container sec-container-mobile">
+        <h1>Contatti</h1>
+        <div class="contacts-container">
+            <div class="contact-item" data-aos="fade-down">
+                <div class="icon">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="text">
+                    <h3 class="contact-title">Telefono</h3>
+                    <a href="tel:+390464435122" class="contact-link">+39 0464 435122</a>
+                </div>
+            </div>
+            <div class="contact-item" data-aos="fade-down">
+                <div class="icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="text">
+                    <h3 class="contact-title">E-mail</h3>
+                    <a href="mailto:3pini@singhrestaurant.it" class="contact-link">3pini@singhrestaurant.it</a>
+                </div>
+            </div>
+            <div class="contact-item" data-aos="fade-down">
+                <div class="icon">
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+                <div class="text">
+                    <h3 class="contact-title">Seguici sui social</h3>
+                    <a class="social-link" href="https://www.facebook.com/3Pini.RistorantePizzeria?locale=it_IT" target="_blank"><i class="fa-brands fa-facebook facebook" style="color: #4268a9;"></i></a>
+                    <a class="social-link" href="https://www.instagram.com/ristorante3pini/" target="_blank"><i class="fa-brands fa-instagram instagram" style="color: #C13584;"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<% if (cookiePref === null) { %>
+    <section class="cookie-banner shadow">
+        <div class="cookie-text">
+            <h3 style="text-transform: uppercase; margin-bottom: 1em;">Utilizzo dei cookies</h3>
+            <p>Questo sito utilizza cookie tecnici e servizi di terze parti (per le sue funzionalità) che utilizzano cookies. Il rifiuto del consenso può rendere non disponibili le relative funzioni.
+    
+                Puoi liberamente prestare, rifiutare o revocare il tuo consenso, in qualsiasi momento.
+                
+                Usa il pulsante “Accetta” per acconsentire. Usa il pulsante “Rifiuta” per continuare senza accettare.</p>
+        </div>
+        <div class="cookie-links mt-1">
+            <a href="/privacy-policy" class="cookie-link">Informativa sui cookies</a>
+        </div>
+        <div class="cookie-button mt-2">
+            <form method="post" action="/cookie-pref">
+                <button class="cookie-btn" type="submit" name="cookieAction" value="accept">Accetto</button>
+                <button class="cookie-btn mt-1" type="submit" name="cookieAction" value="deny">Rifiuto</button>
+            </form>
+        </div>
+    </section>
+<% } %>
+    
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script>
+    // AOS Animations
+    AOS.init();
+    
+    $(document).ready(function() {
+        // Table Day Highlighting
+        let today = new Date().getDay();
+        switch (today) {
+            case 0:
+                $(".table-mobile tbody tr:nth-child(7)").addClass("table-active");
+                $(".table-desk thead tr th:nth-child(8)").addClass("table-active");
+                $(".table-desk tbody tr td:nth-child(8)").addClass("table-active");
+                break;
+            case 1:
+                $(".table-mobile tbody tr:nth-child(1)").addClass("table-active");
+                $(".table-desk thead tr th:nth-child(2)").addClass("table-active");
+                $(".table-desk tbody tr td:nth-child(2)").addClass("table-active");
+                break;
+            case 2:
+                $(".table-mobile tbody tr:nth-child(2)").addClass("table-active");
+                $(".table-desk thead tr th:nth-child(3)").addClass("table-active");
+                $(".table-desk tbody tr td:nth-child(3)").addClass("table-active");
+                break;
+            case 3:
+                $(".table-mobile tbody tr:nth-child(3)").addClass("table-active");
+                $(".table-desk thead tr th:nth-child(4)").addClass("table-active");
+                $(".table-desk tbody tr td:nth-child(4)").addClass("table-active");
+                break;
+            case 4:
+                $(".table-mobile tbody tr:nth-child(4)").addClass("table-active");
+                $(".table-desk thead tr th:nth-child(5)").addClass("table-active");
+                $(".table-desk tbody tr td:nth-child(5)").addClass("table-active");
+                break;
+            case 5:
+                $(".table-mobile tbody tr:nth-child(5)").addClass("table-active");
+                $(".table-desk thead tr th:nth-child(6)").addClass("table-active");
+                $(".table-desk tbody tr td:nth-child(6)").addClass("table-active");
+                break;
+            case 6:
+                $(".table-mobile tbody tr:nth-child(6)").addClass("table-active");
+                $(".table-desk thead tr th:nth-child(7)").addClass("table-active");
+                $(".table-desk tbody tr td:nth-child(7)").addClass("table-active");
+                break;
+            default:
+                break;
+        }
+
+        // Images Overlaying
+        $('.restaurant-images img').on('click', function() {
+            var src = $(this).attr('src');
+            $('.overlay').html('<img src="' + src + '" class="shadow">').fadeIn();
+        });
+
+        $('.history-images img').on('click', function() {
+            var src = $(this).attr('src');
+            $('.overlay').html('<img src="' + src + '" class="shadow">').fadeIn();
+        });
+
+        $('.overlay').on('click', function() {
+            $(this).fadeOut();
+        });
+    });
+
+</script>
+
+<%- include("partials/footer.ejs") %>
