@@ -188,8 +188,9 @@ td {
   text-decoration: none;
   text-align: center;
   display: block;
+  font-size: 1.25rem;
   width: fit-content;
-  padding: .5rem 1rem;
+  padding: .75rem 1.25rem;
   background-color: var(--light-brown);
   border-radius: 5px;
   color: white;
@@ -222,10 +223,14 @@ td {
 
 .restaurant-images img {
   width: 100%;
-  height: 100%;
+  height: 400px;
   object-fit: cover;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.staff-image {
+  border-radius: 5px;
 }
 
 .icon-square {
