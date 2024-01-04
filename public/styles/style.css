@@ -219,6 +219,7 @@ td {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+  width: 100%;
 }
 
 .restaurant-images img {
@@ -719,6 +720,10 @@ td {
     z-index: 999;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     animation-duration: .5s !important;
+  }
+
+  .restaurant-images img {
+    height: 250px;
   }
 
   .contacts {
