@@ -7,8 +7,8 @@
 }
 
 :root {
-  --brown: hsl(31, 19%, 24%);
-  --light-brown: #ac9985;
+  --brown: #493e32;
+  --light-brown: #9b8a78;
   --green: hsl(150, 100%, 20%);
   --light-green: hsl(150, 100%, 78%);
   --orange: hsl(36, 100%, 48%);
@@ -175,7 +175,7 @@ td {
   align-items: center;
 }
 
-.sec-container h1, .sec-container-mobile h1 {
+.sec-container h1, .sec-container-mobile h1, .sec-container h2 {
   font-family: var(--ff-heading);
   font-size: clamp(2.25rem, 1.986rem + 1.085vw, 3rem);
   letter-spacing: 1px;
