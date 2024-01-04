@@ -175,7 +175,7 @@ td {
   align-items: center;
 }
 
-.sec-container h1, .sec-container-mobile h1, .sec-container h2 {
+.sec-container h1, .sec-container-mobile h1, .sec-container h2, .sec-container-mobile h2 {
   font-family: var(--ff-heading);
   font-size: clamp(2.25rem, 1.986rem + 1.085vw, 3rem);
   margin-bottom: 0;
