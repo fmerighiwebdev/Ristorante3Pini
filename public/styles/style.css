@@ -129,6 +129,11 @@ img {
   margin: 5rem 0;
 }
 
+.menu {
+  background-color: hsla(36, 100%, 48%, 0.2);
+  padding: 3rem 0 3rem 0;
+}
+
 .table-mobile {
   display: none;
 }
@@ -280,8 +285,8 @@ td {
 }
 
 .history {
-  background-color: var(--light-brown);
-  padding: 2rem 0;
+  background-color: hsla(31, 15%, 54%, 0.5);
+  padding: 3rem 0;
 }
 
 .history-content {
@@ -339,6 +344,10 @@ td {
 }
 
 /* Menu */
+
+.menu-page {
+  background-color: rgba(219, 253, 200, 0.7);
+}
 
 .menu-container {
   margin: 8rem auto 4rem auto;
