@@ -253,7 +253,7 @@ td {
 .whatsapp-pill {
   background-color: #25d366;
   position: fixed;
-  z-index: 999;
+  z-index: 998;
   bottom: 30px;
   left: 30px;
   width: 80px;
