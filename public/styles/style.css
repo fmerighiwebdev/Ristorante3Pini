@@ -126,12 +126,11 @@ img {
 
 /* Sections */
 .restaurant, .menu, .where, .contacts, .history {
-  margin: 5rem 0;
+  padding: 5rem 0;
 }
 
 .menu {
   background-color: hsla(36, 100%, 48%, 0.2);
-  padding: 3rem 0 3rem 0;
 }
 
 .table-mobile {
@@ -307,7 +306,6 @@ td {
 
 .history {
   background-color: hsla(31, 15%, 54%, 0.5);
-  padding: 3rem 0;
 }
 
 .history-content {
